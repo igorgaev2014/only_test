@@ -1,0 +1,125 @@
+.accordion__wrapper {
+  background-image: url("./main.png");
+  min-height: 1080px;
+  background-position: center;
+  position: relative;
+  width: 1920px;
+}
+
+.accordion {
+  color: #fff;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.button {
+  border-radius: 30px;
+  position: absolute;
+  display: flex;
+  cursor: pointer;
+  padding: 14px 12px;
+  min-height: 16px;
+  min-width: 18px;
+}
+
+.button::before,
+.button::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+}
+
+.button::before {
+  width: 10px;
+  height: 2px;
+  top: 22px;
+  left: 16px;
+}
+
+.button::after {
+  width: 2px;
+  height: 10px;
+  top: 18px;
+  left: 20px;
+}
+
+.visible.button::after {
+  display: none;
+}
+
+.button p {
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+  padding-right: 4px;
+}
+
+.button--stadium {
+  background-color: rgba(106, 191, 75, 0.75);
+  top: 474px;
+  left: -254px;
+}
+
+.button--admin {
+  background-color: rgba(56, 119, 238, 0.75);
+  top: 217px;
+  left: 432px;
+}
+
+.button--eat {
+  background-color: rgba(56, 119, 238, 0.75);
+  top: 273px;
+  left: -361px;
+}
+
+.button--hotel {
+  background-color: rgba(106, 191, 75, 0.75);
+  top: 395px;
+  left: 207px;
+}
+
+.button--laundry {
+  background-color: rgba(106, 191, 75, 0.75);
+  top: 660px;
+  left: 365px;
+}
+.button--spa {
+  background-color: rgba(56, 119, 238, 0.75);
+  top: 466px;
+  left: 473px;
+}
+.button--university {
+  background-color: rgba(106, 191, 75, 0.75);
+  top: 783px;
+  left: 166px;
+}
+
+.button--sport {
+  background-color: rgba(56, 119, 238, 0.75);
+  top: 620px;
+  left: 140px;
+}
+
+.button--library {
+  background-color: rgba(56, 119, 238, 0.75);
+  top: 705px;
+  left: 652px;
+}
+
+.button--activity {
+  background-color: rgba(56, 119, 238, 0.75);
+  top: 705px;
+  left: -495px;
+}
+
+.content {
+  display: none;
+}
+
+.visible > .content {
+  display: block;
+}
